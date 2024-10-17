@@ -8,3 +8,9 @@
 ### project_plan_presentation.pdf
 - 프로젝트 계획서 발표 최종 파일
 - 계획서 내용을 요약한 발표 자료
+
+### project_sds.pdf
+- SW 상세설계서
+
+### weekly_report
+- 주차보고서 폴더
