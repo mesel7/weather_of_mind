@@ -8,7 +8,7 @@ import Analize from './pages/Analize';
 import Counsel from './pages/Counsel';
 
 function App() {
-  const [isdataLoaded, setIsDataLoaded] = useState(false);
+  const [isdataLoaded, setIsDataLoaded] = useState(true);
 
   if (!isdataLoaded) {
     return <div>데이터를 불러오는 중입니다</div>;
@@ -19,8 +19,8 @@ function App() {
           <Route path="/" element={<Calendar />} />
           <Route path="/diary/:id" element={<Diary />} />
           <Route path="/new" element={<New />} />
-          <Route path="analize" element={<Analize />} />
-          <Route path="counsel" element={<Counsel />} />
+          <Route path="/analize" element={<Analize />} />
+          <Route path="/counsel" element={<Counsel />} />
         </Routes>
       </div>
     );
