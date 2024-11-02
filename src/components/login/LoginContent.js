@@ -5,6 +5,8 @@ import { auth, setupRecaptchaVerifier } from "../../firebase";
 import { toLocalePhoneNumber, toIntlPhoneNumber } from "../../utils";
 import { signInWithPhoneNumber } from "firebase/auth";
 import Swal from "sweetalert2";
+import LoginLogo from "./LoginLogo";
+import LoginSublogo from "./LoginSublogo";
 
 const LoginContent = ({ onClose }) => {
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -120,6 +122,7 @@ const LoginContent = ({ onClose }) => {
 
     return (
         <div className="LoginContent">
+            <LoginLogo />
             <LoginForm
                 type={"tel"}
                 value={phoneNumber}
@@ -138,6 +141,7 @@ const LoginContent = ({ onClose }) => {
                 btnText={"로그인"}
                 onSubmit={handleVerifyCode}
             />
+            <LoginSublogo />
             <div ref={recaptchaRef} />
         </div>
     );

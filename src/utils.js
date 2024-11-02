@@ -1,3 +1,11 @@
+import { faHashtag, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
+
+export const icons = {
+    faPhone,
+    faHashtag,
+    faXmark
+};
+
 export const toLocalePhoneNumber = (input) => {
     const cleanText = input.replace(/-/g, "");
     const MAX_LENGTH = 11;
